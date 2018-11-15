@@ -1,0 +1,13 @@
+
+
+<p-panel>
+  <p-header>
+    <div class="embed-img" (click)="inputRef.placeholder=''" (clickOutside)="inputRef.placeholder='Enter any number'">
+    <input #inputRef placeholder="Enter any number" type="text" pInputText myNumberOnly />
+    <img src="assets/images/magnifying-glass.png">
+</div>
+</p-header>
+
+<img src="assets/images/search-{{inputRef.value}}.png" alt="">
+
+</p-panel>

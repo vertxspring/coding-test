@@ -1,0 +1,40 @@
+.module {
+  border: 1px solid black;
+  width: 50%;
+}
+.module-container {
+  max-height: 250px;
+  overflow: scroll;
+}
+a:visited {
+  color: inherit;
+}
+input {
+  color: red;
+}
+div.heading {
+  max-height: 50px;
+  background-color: blue;
+  color: white;
+  font-size: 24px;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+}
+.mainLabel {
+  border-bottom: 1px solid #42bcf4;
+  padding: 10px;
+}
+.children-container {
+  border-bottom: 1px solid #42bcf4;
+  padding: 10px;
+}
+.children {
+  margin-left: 5%;
+}
+.add-more-link {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 10px;
+}

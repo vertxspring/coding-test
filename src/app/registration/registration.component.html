@@ -1,0 +1,34 @@
+
+<p-panel>
+  <p-header>
+   Register Now
+</p-header>
+<div>
+  <span class='input-label'>Name</span>
+  <input id="float-input" [(ngModel)]="fname" type="text" size="15" pInputText> 
+  <input id="float-input" [(ngModel)]="lname" type="text" size="15" pInputText> 
+</div>
+<div>
+  <span class='input-label'>Email Address</span>
+  <input id="float-input" [(ngModel)]="email" type="text" size="34" pInputText> 
+</div>
+<div>
+  <span class='input-label'>Confirm Email Address</span>
+  <input id="float-input" [(ngModel)]="confirmEmail" type="text" size="34" pInputText> 
+</div>
+<div>
+  <span class='input-label'>Mobile Number</span>
+  <input id="float-input" [(ngModel)]="mobile" type="text" size="34" pInputText> 
+</div>
+<div>
+    <span class='input-label'>Areas of interest</span>
+  <app-areas-of-interest #picklist [src]=sampleList></app-areas-of-interest>
+  </div>
+  <br>
+<br>
+  <button pButton type="button" label="Submit" (click)='submit()' [disabled]='email!=confirmEmail' ></button>
+</p-panel>
+<br>
+<br>
+<br>
+<br>

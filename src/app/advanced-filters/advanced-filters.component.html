@@ -1,0 +1,28 @@
+<div class="module">
+  <div class="module-container">
+    <div class="heading">
+        Advanced Filters
+      </div>
+      <div *ngFor="let filter of layoutStructure">
+        <div (click)="updateHeaderCheckbox(filter)"
+          class="mainLabel checkbox-container">
+            <input type="checkbox"
+              [checked]="filter.headerActive"
+              id="main-label-checkbox">
+            <label for="main-label-checkbox"><a href="">{{filter.header}}</a></label>
+        </div>
+        <div *ngFor="let childrenData of filter.children" class="children-container">
+          <div (click)="updateIndividualChildren(childrenData, filter)"
+            class="children checkbox-container">
+              <input type="checkbox"
+                [checked]="childrenData.active"
+                id="children-label">
+              <label for="children-label"><a href="">{{childrenData.childrenLabel}}</a></label>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="add-more-link">
+      <a href="" >Add More</a>
+  </div>
+</div>

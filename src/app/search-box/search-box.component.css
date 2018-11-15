@@ -1,0 +1,3 @@
+.embed-img { position: relative; width:240px; }
+.embed-img input { border:none; background:#fff; display:block; width: 100%; box-sizing: border-box }
+.embed-img img { position: absolute; top: 2px; right: 5px }
